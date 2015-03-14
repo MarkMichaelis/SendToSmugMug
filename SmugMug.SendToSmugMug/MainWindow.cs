@@ -199,7 +199,13 @@ namespace SmugMug.SendToSmugMug
 
                 MessageBox.Show("You will now be directed to your web browser to sign in. When you are finished, come back to Send to SmugMug and answer the next question.", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 System.Diagnostics.Process.Start(url);
-                MessageBox.Show("Send to SmugMug will now check to see if you authorized it for upload.", "", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                DialogResult ds = MessageBox.Show("Send to SmugMug will now check to see if you authorized it for upload.", "", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+
+                if (ds == System.Windows.Forms.DialogResult.Cancel)
+                {
+                    Application.Exit();
+                    return;
+                }
 
                 try
                 {
@@ -2213,7 +2219,8 @@ namespace SmugMug.SendToSmugMug
         private void menuItemEditAccountSettings_Click(object sender, EventArgs e)
         {
             RegistrySettings.TokenSecret = String.Empty;
-            this.Bootstrap();
+            Application.Exit();
+            //this.Bootstrap();
         }
 
         private void menuItemLoadImagesFromSubdirectories_Click(object sender, EventArgs e)
