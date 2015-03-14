@@ -1,0 +1,94 @@
+HKCR
+{
+	AppRunnerCM.AppRunnerShellExtension.1 = s 'AppRunnerShellExtension Class'
+	{
+		CLSID = s '{64A5D2C5-99C9-4512-AE7B-2DBB3B62664C}'
+	}
+	AppRunnerCM.AppRunnerShellExtension = s 'AppRunnerShellExtension Class'
+	{
+		CLSID = s '{64A5D2C5-99C9-4512-AE7B-2DBB3B62664C}'
+		CurVer = s 'AppRunnerCM.AppRunnerShellExtension.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {64A5D2C5-99C9-4512-AE7B-2DBB3B62664C} = s 'AppRunnerShellExtension Class'
+		{
+			ProgID = s 'AppRunnerCM.AppRunnerShellExtension.1'
+			VersionIndependentProgID = s 'AppRunnerCM.AppRunnerShellExtension'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{6D1A9EEC-9046-4A59-88D0-CD8CA7DE5C40}'
+		}
+	}
+	
+    NoRemove Directory
+    {
+        NoRemove ShellEx
+        {
+            NoRemove ContextMenuHandlers
+            {
+                ForceRemove AppRunnerShellExtension = s '{64A5D2C5-99C9-4512-AE7B-2DBB3B62664C}'
+            }
+        }
+    }
+
+    NoRemove Directory
+    {
+        NoRemove ShellEx
+        {
+            NoRemove ContextMenuHandlers
+            {
+                ForceRemove AppRunnerShellExtension = s '{64A5D2C5-99C9-4512-AE7B-2DBB3B62664C}'
+            }
+        }
+    }
+
+    NoRemove jpegfile
+    {
+        NoRemove ShellEx
+        {
+            NoRemove ContextMenuHandlers
+            {
+                ForceRemove AppRunnerShellExtension = s '{64A5D2C5-99C9-4512-AE7B-2DBB3B62664C}'
+            }
+        }
+    }
+    
+    NoRemove *
+    {
+        NoRemove ShellEx
+        {
+            NoRemove ContextMenuHandlers
+            {
+                ForceRemove AppRunnerShellExtension = s '{64A5D2C5-99C9-4512-AE7B-2DBB3B62664C}'
+            }
+        }
+    }
+}
+
+HKLM
+{
+	  NoRemove Software
+	  {
+			NoRemove Microsoft
+			{
+				  NoRemove Windows
+				  {
+						NoRemove CurrentVersion
+						{
+							NoRemove 'Shell Extensions'
+							{
+								NoRemove Approved
+								{	
+									ForceRemove val {64A5D2C5-99C9-4512-AE7B-2DBB3B62664C} = s 'Send to SmugMug'
+								}
+							}
+						}
+				  }
+			}
+	  }
+}

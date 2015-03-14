@@ -1,0 +1,9 @@
+; AppRunnerCM.def : Declares the module parameters.
+
+LIBRARY      "AppRunnerCM.DLL"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE

@@ -1,0 +1,75 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{60CFD782-3EAD-43F0-8B3A-B9759C189AF6}"
+	ProjectSection(SolutionItems) = preProject
+		SendToSmugMug-beta.xml = SendToSmugMug-beta.xml
+		SendToSmugMug.xml = SendToSmugMug.xml
+		SmugmugDownloader.xml = SmugmugDownloader.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmugMug.Api", "SmugMug.Api\SmugMug.Api.csproj", "{5E6B748A-6BD2-4C5F-8D62-ED3C719E8142}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmugMug.SendToSmugMug", "SmugMug.SendToSmugMug\SmugMug.SendToSmugMug.csproj", "{B046E075-C0E8-45C0-913F-39DED83935B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmugMug.Toolkit", "SmugMug.Toolkit\SmugMug.Toolkit.csproj", "{F1FC711E-0FD5-4764-8603-BABBA5E886E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmugMug.VideoPlayer", "SmugMug.VideoPlayer\SmugMug.VideoPlayer.csproj", "{EB753766-D493-4030-AE37-DE114BF1A00C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmugMug.Api.Tests", "SmugMug.Api.Tests\SmugMug.Api.Tests.csproj", "{91F87AB3-AA7B-4F0B-BB3A-5F23C91FB653}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E6B748A-6BD2-4C5F-8D62-ED3C719E8142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E6B748A-6BD2-4C5F-8D62-ED3C719E8142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E6B748A-6BD2-4C5F-8D62-ED3C719E8142}.Debug|x86.ActiveCfg = Debug|x86
+		{5E6B748A-6BD2-4C5F-8D62-ED3C719E8142}.Debug|x86.Build.0 = Debug|x86
+		{5E6B748A-6BD2-4C5F-8D62-ED3C719E8142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E6B748A-6BD2-4C5F-8D62-ED3C719E8142}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E6B748A-6BD2-4C5F-8D62-ED3C719E8142}.Release|x86.ActiveCfg = Release|x86
+		{5E6B748A-6BD2-4C5F-8D62-ED3C719E8142}.Release|x86.Build.0 = Release|x86
+		{B046E075-C0E8-45C0-913F-39DED83935B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B046E075-C0E8-45C0-913F-39DED83935B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B046E075-C0E8-45C0-913F-39DED83935B5}.Debug|x86.ActiveCfg = Debug|x86
+		{B046E075-C0E8-45C0-913F-39DED83935B5}.Debug|x86.Build.0 = Debug|x86
+		{B046E075-C0E8-45C0-913F-39DED83935B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B046E075-C0E8-45C0-913F-39DED83935B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B046E075-C0E8-45C0-913F-39DED83935B5}.Release|x86.ActiveCfg = Release|x86
+		{B046E075-C0E8-45C0-913F-39DED83935B5}.Release|x86.Build.0 = Release|x86
+		{F1FC711E-0FD5-4764-8603-BABBA5E886E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1FC711E-0FD5-4764-8603-BABBA5E886E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1FC711E-0FD5-4764-8603-BABBA5E886E3}.Debug|x86.ActiveCfg = Debug|x86
+		{F1FC711E-0FD5-4764-8603-BABBA5E886E3}.Debug|x86.Build.0 = Debug|x86
+		{F1FC711E-0FD5-4764-8603-BABBA5E886E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1FC711E-0FD5-4764-8603-BABBA5E886E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1FC711E-0FD5-4764-8603-BABBA5E886E3}.Release|x86.ActiveCfg = Release|x86
+		{F1FC711E-0FD5-4764-8603-BABBA5E886E3}.Release|x86.Build.0 = Release|x86
+		{EB753766-D493-4030-AE37-DE114BF1A00C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB753766-D493-4030-AE37-DE114BF1A00C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB753766-D493-4030-AE37-DE114BF1A00C}.Debug|x86.ActiveCfg = Debug|x86
+		{EB753766-D493-4030-AE37-DE114BF1A00C}.Debug|x86.Build.0 = Debug|x86
+		{EB753766-D493-4030-AE37-DE114BF1A00C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB753766-D493-4030-AE37-DE114BF1A00C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB753766-D493-4030-AE37-DE114BF1A00C}.Release|x86.ActiveCfg = Release|x86
+		{EB753766-D493-4030-AE37-DE114BF1A00C}.Release|x86.Build.0 = Release|x86
+		{91F87AB3-AA7B-4F0B-BB3A-5F23C91FB653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91F87AB3-AA7B-4F0B-BB3A-5F23C91FB653}.Debug|x86.ActiveCfg = Debug|x86
+		{91F87AB3-AA7B-4F0B-BB3A-5F23C91FB653}.Debug|x86.Build.0 = Debug|x86
+		{91F87AB3-AA7B-4F0B-BB3A-5F23C91FB653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91F87AB3-AA7B-4F0B-BB3A-5F23C91FB653}.Release|x86.ActiveCfg = Release|x86
+		{91F87AB3-AA7B-4F0B-BB3A-5F23C91FB653}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = SmugMug.vsmdi
+	EndGlobalSection
+EndGlobal

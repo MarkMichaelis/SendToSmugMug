@@ -1,0 +1,36 @@
+// AppRunnerCM.idl : IDL source for AppRunnerCM
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (AppRunnerCM.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(9873A5B4-82B6-4CD7-953A-406E439735DE),
+	dual,
+	nonextensible,
+	helpstring("IAppRunnerShellExtension Interface"),
+	pointer_default(unique)
+]
+interface IAppRunnerShellExtension : IDispatch{
+};
+[
+	uuid(6D1A9EEC-9046-4A59-88D0-CD8CA7DE5C40),
+	version(1.0),
+	helpstring("AppRunnerCM 1.0 Type Library")
+]
+library AppRunnerCMLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(64A5D2C5-99C9-4512-AE7B-2DBB3B62664C),
+		helpstring("AppRunnerShellExtension Class")
+	]
+	coclass AppRunnerShellExtension
+	{
+		[default] interface IAppRunnerShellExtension;
+	};
+};

@@ -1,0 +1,112 @@
+TODO:
+
+Update API and Gallery Settings
+-pro features
+	- theme choice
+	- proof days and backprinting (pro features)
+- use attributes for pro/power properties
+- watermark doesn't work?
+- rotate photos using new API call in 1.2.1
+- limit upload size to FileSizeUpload
+- status - estimated time
+
+Fixed in v.Next
+- Support for people tags
+- Fixed issue uploading non ASCII characters in filename
+- Fixed a bug with Portfolio accounts
+- Fixed a bug where some people didn't see any images after loading
+
+Fixed in 2.0.4957.12839
+- Watermark options
+- .net 4
+- performance improvements
+- people tags supported
+
+Fixed in 1.2.9066.0
+- Pro settings did not work
+- Allow for all sizes of album photos (Large/XLarge etc)
+- fixed a bug loading the gallery URL
+
+Fixed in 1.2.9052.0
+- 64bit support works again
+- fixed a bug uploading a large number of files.
+
+Fixed in 1.1.8198.0
+- support for SmugVault
+- resume failed uploads
+- fixed a bug if you tried to highlight an unselected photo
+- feedback links
+- send error report
+
+Fixed in 1.1.8149.0
+- fixed upload bug causing duplicate images on May 27th, 2008
+- added Select All to all text boxes
+- added checkbox toggle to check all items in the list
+- added GIF removed TIFF
+- added support for ShareGroups (beta)
+- made 120 dpi temporarily better
+
+Fixed in 1.1.8115.0
+- fixed the upload progress indicator 
+- fixed captions and keywords from getting uploaded
+- BETA: support for uploading video (wmv, avi, mov, mp4, mpg) 
+- BETA: support for uploading TIFF, PNG 
+- BETA: preview video of QuickTime and WMV files
+
+Fixed in 1.1.8099.0
+- fixed some problems with upload with files that took longer than 90 seconds 
+
+Fixed in 1.1.8094.0
+- square thumbs
+- some more work to fix upload reliability
+- allow you to cancel and resume an upload
+- improved performance on upload
+- improve load time
+- support featured photo
+- support for logging (see ReadMe.txt in C:\Program Files\Send to SmugMug\)
+
+Fixed in 1.1.8056.0
+- resize bug fixed.
+- when a subcategory is available, it's not selected by default
+- fixed the preview and progress during upload
+- fixed some typos
+- support new smugmug privacy settings
+- fixed some issues with the IPTC Title and XMP Title (for photo captions)
+- uploads are more reliable
+
+Fixed in 1.1.7336.0
+- 64bit support for Vista
+- fixed an upgrade installer bug in the last version
+- captions were not being read correctly
+- previously uploaded filter now works when selecting existing albums manually
+- when switching from new to existing uploaded status is queried
+- password wasn't being encrypted in the registry on Vista
+- password hint box doesn't hide the hint from you
+
+Fixed in 1.1.7329.0
++ Autoupdate would not work
+
+Fixed in 1.1.7328.0
++ Send to SmugMug menu would not appear when selecting a jpg after installing Windows Live PhotoGallery
+
+Fixed in 1.0.7326.0
++ fix donate button going away
++ sending a single photo is not working
++ faster at matching existing uploaded photos
++ more gallery styles (critique, filmstrip and "Elegant" is called "SmugMug" now)
++ map nickname to web address (get rid of UI)
+
+new options
++ mapping yes/no
++ password hint
++ hide owner
++ Hello World (SmugIslands)
++ Hello Smuggers (SmugIslands)
++ f&f edit and captions
++ photorank yes/no
+
+FIXED 6137:
++ progress when upload takes longer than one hour
++ setting caption/keywords for XP MetaData
++ fix problems with already uploaded selections
++ should now work with .net framework 2.0 only

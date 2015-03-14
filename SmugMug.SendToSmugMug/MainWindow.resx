@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="contextMenuFilter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>359, 17</value>
+  </metadata>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>509, 17</value>
+  </metadata>
+  <data name="comboBoxCategory.ToolTip" xml:space="preserve">
+    <value>Categories help you organize your galleries into subjects. They also help 
+people browsing the site find the galleries they're most interested in. By putting your 
+gallery in the proper category, you're helping people find your photos.</value>
+  </data>
+  <data name="comboBoxSubCategory.ToolTip" xml:space="preserve">
+    <value>Subcategories let you create your own custom category names and associate 
+your galleries with them. On your homepage, you can create as many sub-categories as you'd 
+like. Once created, you can then customize your galleries and assign them to sub-categories, 
+if you wish.</value>
+  </data>
+  <data name="textBoxKeywords.ToolTip" xml:space="preserve">
+    <value>Keywords assist people who are searching for your gallery. When they search 
+for certain words, SmugMug checks the Title, Description, and Keywords fields for those words, 
+and then shows them the results. Picking good keywords helps people find your photos more easily.</value>
+  </data>
+  <data name="radioButtonUnlisted.ToolTip" xml:space="preserve">
+    <value>Unlisted galleries can be viewed only by those who know the address. You'll have to invite your fans to see how amazing you are. Unlisting a gallery does not make it secure, only hidden and hard to find.</value>
+  </data>
+  <data name="checkBoxAllowExternalLinks.ToolTip" xml:space="preserve">
+    <value>Most people enjoy linking their photos externally, whether it's to post 
+photos in their favorite message forums, or to sell things on eBay. Occasionally, though, 
+a malicious user on the net may use your photos in their links, running your bandwidth up. 
+You have the option of turning off external links and preventing that sort of behavior.</value>
+  </data>
+  <data name="checkBoxProtected.ToolTip" xml:space="preserve">
+    <value>Professional account subscribers can choose to foil right-clicking on their photos on a gallery-by-gallery basis.  Simply choose the customize gallery button and scroll down to find the protected option.</value>
+  </data>
+  <data name="checkBoxShowCameraInfo.ToolTip" xml:space="preserve">
+    <value>Most digital cameras can store all sorts of useful information inside your 
+photographs, such as the type of camera used, the time the photo was taken, and the type 
+of lens. SmugMug makes it easy to show or hide this information. It's up to you!</value>
+  </data>
+  <data name="checkBoxShowFilenames.ToolTip" xml:space="preserve">
+    <value>If you've set a caption on a photo, that caption will always be displayed, 
+even if this option is turned on. However, for photos without captions already set, you can 
+enable this option to display your filename instead of the caption. It strips off the 
+extension (.JPG) and just displays the name of the file.</value>
+  </data>
+  <data name="checkBoxSortDirection.ToolTip" xml:space="preserve">
+    <value>This option determines which direction your photos will be sorted by. 
+If you choose Ascending, for example, 'Apple' will appear before 'Zebra', and '001' 
+will appear before '099'. Descending is the reverse, so 'Zebra' would appear first.</value>
+  </data>
+  <data name="checkBoxAllowComments.ToolTip" xml:space="preserve">
+    <value>You can allow people to have the ability to comment on, and rate, your 
+gallery and its photos, if you'd like. When enabled, they'll be able to see other comments 
+and post their own, as well as see an overall rating.</value>
+  </data>
+  <data name="checkBoxAllowEasySharing.ToolTip" xml:space="preserve">
+    <value>When turned on, Easy Sharing causes a handy button to be located underneath 
+each photo that makes it easy to share your photos with your friends, post them on eBay 
+auctions, or share them in online forums. If you prefer not to make sharing easy, though, 
+you can disable it right here.</value>
+  </data>
+  <data name="checkBoxAllowPrintOrdering.ToolTip" xml:space="preserve">
+    <value>When turned on, Easy Sharing causes a handy button to be located underneath 
+each photo that makes it easy to share your photos with your friends, post them on eBay 
+auctions, or share them in online forums. If you prefer not to make sharing easy, though, 
+you can disable it right here.</value>
+  </data>
+  <data name="checkBoxFriendEdit.ToolTip" xml:space="preserve">
+    <value>You can allow people to have the ability to comment on, and rate, your 
+gallery and its photos, if you'd like. When enabled, they'll be able to see other comments 
+and post their own, as well as see an overall rating.</value>
+  </data>
+  <data name="checkBoxFamilyEdit.ToolTip" xml:space="preserve">
+    <value>You can allow people to have the ability to comment on, and rate, your 
+gallery and its photos, if you'd like. When enabled, they'll be able to see other comments 
+and post their own, as well as see an overall rating.</value>
+  </data>
+  <metadata name="mainMenu1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>599, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAIAEBAAAAAAAABoBQAAJgAAACAgAAAAAAAAqAgAAI4FAAAoAAAAEAAAACAAAAABAAgAAAAAAAAB
+        AAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAgAAAgAAAAICAAIAAAACAAIAAgIAAAMDAwADA3MAA8MqmAAQE
+        BAAICAgADAwMABEREQAWFhYAHBwcACIiIgApKSkAVVVVAE1NTQBCQkIAOTk5AIB8/wBQUP8AkwDWAP/s
+        zADG1u8A1ufnAJCprQAAADMAAABmAAAAmQAAAMwAADMAAAAzMwAAM2YAADOZAAAzzAAAM/8AAGYAAABm
+        MwAAZmYAAGaZAABmzAAAZv8AAJkAAACZMwAAmWYAAJmZAACZzAAAmf8AAMwAAADMMwAAzGYAAMyZAADM
+        zAAAzP8AAP9mAAD/mQAA/8wAMwAAADMAMwAzAGYAMwCZADMAzAAzAP8AMzMAADMzMwAzM2YAMzOZADMz
+        zAAzM/8AM2YAADNmMwAzZmYAM2aZADNmzAAzZv8AM5kAADOZMwAzmWYAM5mZADOZzAAzmf8AM8wAADPM
+        MwAzzGYAM8yZADPMzAAzzP8AM/8zADP/ZgAz/5kAM//MADP//wBmAAAAZgAzAGYAZgBmAJkAZgDMAGYA
+        /wBmMwAAZjMzAGYzZgBmM5kAZjPMAGYz/wBmZgAAZmYzAGZmZgBmZpkAZmbMAGaZAABmmTMAZplmAGaZ
+        mQBmmcwAZpn/AGbMAABmzDMAZsyZAGbMzABmzP8AZv8AAGb/MwBm/5kAZv/MAMwA/wD/AMwAmZkAAJkz
+        mQCZAJkAmQDMAJkAAACZMzMAmQBmAJkzzACZAP8AmWYAAJlmMwCZM2YAmWaZAJlmzACZM/8AmZkzAJmZ
+        ZgCZmZkAmZnMAJmZ/wCZzAAAmcwzAGbMZgCZzJkAmczMAJnM/wCZ/wAAmf8zAJnMZgCZ/5kAmf/MAJn/
+        /wDMAAAAmQAzAMwAZgDMAJkAzADMAJkzAADMMzMAzDNmAMwzmQDMM8wAzDP/AMxmAADMZjMAmWZmAMxm
+        mQDMZswAmWb/AMyZAADMmTMAzJlmAMyZmQDMmcwAzJn/AMzMAADMzDMAzMxmAMzMmQDMzMwAzMz/AMz/
+        AADM/zMAmf9mAMz/mQDM/8wAzP//AMwAMwD/AGYA/wCZAMwzAAD/MzMA/zNmAP8zmQD/M8wA/zP/AP9m
+        AAD/ZjMAzGZmAP9mmQD/ZswAzGb/AP+ZAAD/mTMA/5lmAP+ZmQD/mcwA/5n/AP/MAAD/zDMA/8xmAP/M
+        mQD/zMwA/8z/AP//MwDM/2YA//+ZAP//zABmZv8AZv9mAGb//wD/ZmYA/2b/AP//ZgAhAKUAX19fAHd3
+        dwCGhoYAlpaWAMvLywCysrIA19fXAN3d3QDj4+MA6urqAPHx8QD4+PgA8Pv/AKSgoACAgIAAAAD/AAD/
+        AAAA//8A/wAAAP8A/wD//wAA////ABAODg4ODg4ODg4ODg4ODhAMCgoKChUS6hQMCgoKCgoMDgoKCu3v
+        95LvkhEKCgoKDg4KDpKSQwwKEe3vEQoKCg4OChLvCgoKCgoM7fcMCgoODgrs+AoKCgoKChHv6goKDg4K
+        7esKCgoKCgoK+PcMCg4OCuz4CgoKCgoKChDvEwoODgoS7+rqbW1tbW1t9+0KDg4KDu3395Lt7e2SkpLr
+        Cg4OCgoMDAwKCgoKCgsMCgoODgoKCgoKCgoKCgoKCgoKDg4KCgpDCgoKCg4OCgoKCg4OCgoQ75IMCgzt
+        kgwKCgoODAoKCkNDCgoKFRQKCgoKDBAODg4ODg4ODg4ODg4ODhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAACAAAABAAAAAAQAIAAAA
+        AAAABAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAIAAAIAAAACAgACAAAAAgACAAICAAADAwMAAwNzAAPDK
+        pgAEBAQACAgIAAwMDAAREREAFhYWABwcHAAiIiIAKSkpAFVVVQBNTU0AQkJCADk5OQCAfP8AUFD/AJMA
+        1gD/7MwAxtbvANbn5wCQqa0AAAAzAAAAZgAAAJkAAADMAAAzAAAAMzMAADNmAAAzmQAAM8wAADP/AABm
+        AAAAZjMAAGZmAABmmQAAZswAAGb/AACZAAAAmTMAAJlmAACZmQAAmcwAAJn/AADMAAAAzDMAAMxmAADM
+        mQAAzMwAAMz/AAD/ZgAA/5kAAP/MADMAAAAzADMAMwBmADMAmQAzAMwAMwD/ADMzAAAzMzMAMzNmADMz
+        mQAzM8wAMzP/ADNmAAAzZjMAM2ZmADNmmQAzZswAM2b/ADOZAAAzmTMAM5lmADOZmQAzmcwAM5n/ADPM
+        AAAzzDMAM8xmADPMmQAzzMwAM8z/ADP/MwAz/2YAM/+ZADP/zAAz//8AZgAAAGYAMwBmAGYAZgCZAGYA
+        zABmAP8AZjMAAGYzMwBmM2YAZjOZAGYzzABmM/8AZmYAAGZmMwBmZmYAZmaZAGZmzABmmQAAZpkzAGaZ
+        ZgBmmZkAZpnMAGaZ/wBmzAAAZswzAGbMmQBmzMwAZsz/AGb/AABm/zMAZv+ZAGb/zADMAP8A/wDMAJmZ
+        AACZM5kAmQCZAJkAzACZAAAAmTMzAJkAZgCZM8wAmQD/AJlmAACZZjMAmTNmAJlmmQCZZswAmTP/AJmZ
+        MwCZmWYAmZmZAJmZzACZmf8AmcwAAJnMMwBmzGYAmcyZAJnMzACZzP8Amf8AAJn/MwCZzGYAmf+ZAJn/
+        zACZ//8AzAAAAJkAMwDMAGYAzACZAMwAzACZMwAAzDMzAMwzZgDMM5kAzDPMAMwz/wDMZgAAzGYzAJlm
+        ZgDMZpkAzGbMAJlm/wDMmQAAzJkzAMyZZgDMmZkAzJnMAMyZ/wDMzAAAzMwzAMzMZgDMzJkAzMzMAMzM
+        /wDM/wAAzP8zAJn/ZgDM/5kAzP/MAMz//wDMADMA/wBmAP8AmQDMMwAA/zMzAP8zZgD/M5kA/zPMAP8z
+        /wD/ZgAA/2YzAMxmZgD/ZpkA/2bMAMxm/wD/mQAA/5kzAP+ZZgD/mZkA/5nMAP+Z/wD/zAAA/8wzAP/M
+        ZgD/zJkA/8zMAP/M/wD//zMAzP9mAP//mQD//8wAZmb/AGb/ZgBm//8A/2ZmAP9m/wD//2YAIQClAF9f
+        XwB3d3cAhoaGAJaWlgDLy8sAsrKyANfX1wDd3d0A4+PjAOrq6gDx8fEA+Pj4APD7/wCkoKAAgICAAAAA
+        /wAA/wAAAP//AP8AAAD/AP8A//8AAP///wAKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoK
+        CgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKO/o7CgoMCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgr6+voK
+        CgwKCgoKCgoKCgoOE+vt9/eS7OoQCgoKCgoKCvr6+goKDAoKCgoKCgoKFZLv7+/v7+/v7/cSDAoKCgoK
+        +vr6CgoMCgoKCgoKCm3v9+/3kuzr7ffv9+/sDgoKO/r6+vr6OwwKCgoKCgoS7/f36xUOCgoMEW339+/s
+        DgoKO/r6+jsKDAoKCgoKFe/39xUKCgoKCgoKChH39+/sCgoKO/o7CgoMCgoKCgrr7/cTCgoKCgoKCgoK
+        ChGS9+9tCgoK+goKCgwKCgoKDvfv7AoKCgoKCgoKCgoKChTv9/cKCgoKCgoKCgoKCgoT7+8SCgoKCgoK
+        CgoKCgoKCuvv7+wKCgoKCgoKCgoKCurv9xUKCgoKCgoKCgoKCgoKCvf37xUKCgoKCgoKCgoKbe/3QwoK
+        CgoKCgoKCgoKCgoK6+/v6woKCgoKCgoKCgrr7/cRCgoKCgoKCgoKCgoKCgpD9/f3EAoKCgoKCgoKCm3v
+        90MKCgoKCgoKCgoKCgoKCgrs7+/rCgoKCgoKCgoKE+/vEwoKCgoKCgoKCgoKCgoKChH39/cOCgoKCgoK
+        CgoK9+/sDgwODgoKChAQEBAKCgoKCu337xIKCgoKCgoKCgrr7/f39/f39/f39/f39/f39/f39/f37QoK
+        CgoKCgoKChXv9/fv7+/v7+/v7+/v7+/v7+/39+/tCgoKCgoKCgoKDuz3ku3t7Ozs7Ovr6+vs7Ozs7Ozs
+        7BEKCgoKCgoKCgoKCgwMDAoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoK
+        CgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoK
+        CgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKFOoUCgoK
+        CgoKCgoRCgoKCgoKCgoKCgoKCgoKCgoKChTv7+/sDAoKCgoK6/f36woKCgoKCgoKCgoKCgoKCgoKE+/v
+        7/cOCgoKCg737+/3DgoKCgoKCgoKCgoKCgoKCgoMFRLrFAoKCgoKCkPs9+oKCgoKCgoKCgoKCgoKCgoK
+        CgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoK
+        CgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+</value>
+  </data>
+</root>
