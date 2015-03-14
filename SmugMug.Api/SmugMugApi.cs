@@ -340,7 +340,7 @@ namespace SmugMug.Api
 		/// <remarks>SubCategories are cached for the existing Session.
 		/// Throws an <see cref="SmugMugException"/>
 		/// if an error occurs trying to retrieve the SubCategories.</remarks>
-		public SubCategory[] GetSubCategories(int categoryID)
+		public SubCategory[] GetSubCategories(long categoryID)
 		{
 			logger.Info("Getting SubCategories for category id: " + categoryID.ToString());
 

@@ -2,6 +2,6 @@
 {
     public struct Community
     {
-        public int id;
+        public long id;
     }
 }

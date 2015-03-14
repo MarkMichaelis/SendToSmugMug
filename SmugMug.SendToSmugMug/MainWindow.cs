@@ -563,7 +563,7 @@ namespace SmugMug.SendToSmugMug
         {
             if (this.comboBoxCategory.SelectedItem != null)
             {
-                int categoryID = ((Category)this.comboBoxCategory.SelectedItem).id;
+                long categoryID = ((Category)this.comboBoxCategory.SelectedItem).id;
                 SubCategory[] categories = this.smugMug.GetSubCategories(categoryID);
                 this.comboBoxSubCategory.DataSource = categories;
                 this.comboBoxSubCategory.DisplayMember = "Name";
@@ -650,7 +650,9 @@ namespace SmugMug.SendToSmugMug
         {
             this.SetStatusText("Creating new Album...");
 
-            int categoryID = 0, subCategoryID = 0, templateID = 0;
+            long categoryID = 0, subCategoryID = 0;
+            int templateID = 0;
+
             if (this.comboBoxCategory.Items.Count > 0)
             {
                 categoryID = ((Category)this.comboBoxCategory.SelectedItem).id;

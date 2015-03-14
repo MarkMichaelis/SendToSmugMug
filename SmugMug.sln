@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2013 for Windows Desktop
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{60CFD782-3EAD-43F0-8B3A-B9759C189AF6}"
 	ProjectSection(SolutionItems) = preProject
@@ -60,6 +60,7 @@ Global
 		{EB753766-D493-4030-AE37-DE114BF1A00C}.Release|x86.ActiveCfg = Release|x86
 		{EB753766-D493-4030-AE37-DE114BF1A00C}.Release|x86.Build.0 = Release|x86
 		{91F87AB3-AA7B-4F0B-BB3A-5F23C91FB653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91F87AB3-AA7B-4F0B-BB3A-5F23C91FB653}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91F87AB3-AA7B-4F0B-BB3A-5F23C91FB653}.Debug|x86.ActiveCfg = Debug|x86
 		{91F87AB3-AA7B-4F0B-BB3A-5F23C91FB653}.Debug|x86.Build.0 = Debug|x86
 		{91F87AB3-AA7B-4F0B-BB3A-5F23C91FB653}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -7,7 +7,7 @@
             return this.Name;
         }
 
-        public int id;
+        public long id;
         public string Name;
         public string NiceName;
         public CategoryType Type;

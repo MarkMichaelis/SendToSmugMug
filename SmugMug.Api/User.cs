@@ -2,7 +2,7 @@
 {
     public struct User
     {
-        public int id;
+        public long id;
         public string NickName;
         public string DisplayName;
         //public string AccountType;

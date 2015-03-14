@@ -7,7 +7,7 @@
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
 AppId={{122C4BD3-8100-4758-9E8A-D41BCB2141F1}
 AppName=Send to SmugMug
-AppVersion=2.0.5551
+AppVersion=2.0.5103
 ;AppVerName=Send to SmugMug 1.3
 AppPublisher=Omar Shahine
 AppPublisherURL=http://www.shahine.com/garage/software/send-to-smugmug/
@@ -23,7 +23,7 @@ UsePreviousGroup=False
 MinVersion=0,6.0
 LicenseFile=License.rtf
 ;SignTool IDE C:\Users\Omar\Sources\SmugMug\SmugMug.Setup\signtool.exe sign /sha1 51a673b34ceca4042eabc0f656282ad4d156563a /t http://timestamp.comodoca.com/authenticode $p
-;SignTool=SignTool /d $qSend to SmugMug$q /v $f
+SignTool=SignTool /d $qSend to SmugMug$q /v $f
 OutputDir=Release
 UninstallDisplayIcon={app}\App.ico
 UninstallDisplayName=Send to SmugMug

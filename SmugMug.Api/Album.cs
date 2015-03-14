@@ -13,12 +13,12 @@ namespace SmugMug.Api
         public int CommunityID;
         public Highlight Highlight;
         // only use to set on creation
-        internal int CategoryID;
+        internal long CategoryID;
         public Category Category;
         public int WatermarkID;
         public SubCategory SubCategory;
         // only use to set on creation
-        internal int SubCategoryID;
+        internal long SubCategoryID;
         public int Position;
         public int ImageCount;
         public string Title;
@@ -26,6 +26,8 @@ namespace SmugMug.Api
         public string Keywords;
         public bool Public;
         public string Password;
+        // TODO: added bool Passworded
+        // public bool Passworded;
         public string PasswordHint;
         public bool Printable;
         public bool Filenames;
@@ -64,7 +66,7 @@ namespace SmugMug.Api
         //    return Create(title, 0, 0);
         //}
 
-        public static Album Create(string title, int categoryID = 0, int subcategoryID = 0, int templateID = 0)
+        public static Album Create(string title, long categoryID = 0, long subcategoryID = 0, int templateID = 0)
         {
             Album album = new Album();
 
