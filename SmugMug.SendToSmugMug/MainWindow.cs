@@ -1338,8 +1338,6 @@ namespace SmugMug.SendToSmugMug
                 this.comboBoxSorting.SelectedIndex = 5;
             }
 
-            this.buttonDonate.Visible = !RegistrySettings.DonatedSendToSmugMug;
-
             this.SetButtonFilterText();
         }
 
@@ -1968,17 +1966,6 @@ namespace SmugMug.SendToSmugMug
             SetUploadExistingAlbum();
         }
 
-        private void buttonDonate_Click(object sender, EventArgs e)
-        {
-            DonateForm donateForm = new DonateForm(ProductName);
-            DialogResult result = donateForm.ShowDialog();
-
-            if (result == DialogResult.OK)
-            {
-                this.buttonDonate.Visible = !RegistrySettings.DonatedSendToSmugMug;
-            }
-        }
-
         private void menuItemRating_Click(object sender, EventArgs e)
         {
             MenuItem menuItem = (MenuItem)sender;
@@ -2179,16 +2166,6 @@ namespace SmugMug.SendToSmugMug
         private void menuItemSendError_Click(object sender, System.EventArgs e)
         {
             SendErrorLog();
-        }
-
-        private void menuItemFeedback_Click(object sender, System.EventArgs e)
-        {
-            Utilities.OpenUrl("http://sendtosmugmug.uservoice.com/");
-        }
-
-        private void menuItemForums_Click(object sender, System.EventArgs e)
-        {
-            Utilities.OpenUrl("http://www.shahine.com/garage/forums/7.aspx");
         }
 
         private void linkLabelManageShareGroups_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

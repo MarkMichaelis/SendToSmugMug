@@ -71,8 +71,6 @@
             this.menuItem8 = new System.Windows.Forms.MenuItem();
             this.menuItemSendError = new System.Windows.Forms.MenuItem();
             this.menuItem4 = new System.Windows.Forms.MenuItem();
-            this.menuItemFeedback = new System.Windows.Forms.MenuItem();
-            this.menuItem6 = new System.Windows.Forms.MenuItem();
             this.menuItemHelpAbout = new System.Windows.Forms.MenuItem();
             this.labelStyle = new System.Windows.Forms.Label();
             this.menuItemApplyDefaultSettings = new System.Windows.Forms.MenuItem();
@@ -82,7 +80,6 @@
             this.comboBoxSubCategory = new System.Windows.Forms.ComboBox();
             this.textBoxDescription = new System.Windows.Forms.TextBox();
             this.textBoxKeywords = new System.Windows.Forms.TextBox();
-            this.buttonDonate = new System.Windows.Forms.Button();
             this.labelPassword = new System.Windows.Forms.Label();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.labelPasswordHint = new System.Windows.Forms.Label();
@@ -166,9 +163,10 @@
             this.radioButtonAddToExistingAlbum.Enabled = false;
             this.radioButtonAddToExistingAlbum.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.radioButtonAddToExistingAlbum.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioButtonAddToExistingAlbum.Location = new System.Drawing.Point(8, 16);
+            this.radioButtonAddToExistingAlbum.Location = new System.Drawing.Point(12, 24);
+            this.radioButtonAddToExistingAlbum.Margin = new System.Windows.Forms.Padding(4);
             this.radioButtonAddToExistingAlbum.Name = "radioButtonAddToExistingAlbum";
-            this.radioButtonAddToExistingAlbum.Size = new System.Drawing.Size(139, 18);
+            this.radioButtonAddToExistingAlbum.Size = new System.Drawing.Size(203, 26);
             this.radioButtonAddToExistingAlbum.TabIndex = 0;
             this.radioButtonAddToExistingAlbum.Text = "Add to existing Album:";
             this.radioButtonAddToExistingAlbum.CheckedChanged += new System.EventHandler(this.radioButtonAdd_CheckedChanged);
@@ -180,25 +178,28 @@
             this.panelPreview.Controls.Add(this.panel5);
             this.panelPreview.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelPreview.Location = new System.Drawing.Point(0, 0);
+            this.panelPreview.Margin = new System.Windows.Forms.Padding(4);
             this.panelPreview.Name = "panelPreview";
-            this.panelPreview.Size = new System.Drawing.Size(160, 252);
+            this.panelPreview.Size = new System.Drawing.Size(240, 378);
             this.panelPreview.TabIndex = 2;
             // 
             // previewThumbnailBox
             // 
             this.previewThumbnailBox.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.previewThumbnailBox.Location = new System.Drawing.Point(0, 0);
+            this.previewThumbnailBox.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.previewThumbnailBox.Name = "previewThumbnailBox";
-            this.previewThumbnailBox.Size = new System.Drawing.Size(160, 160);
+            this.previewThumbnailBox.Size = new System.Drawing.Size(240, 240);
             this.previewThumbnailBox.TabIndex = 5;
             this.previewThumbnailBox.URL = null;
             // 
             // labelPreview
             // 
             this.labelPreview.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelPreview.Location = new System.Drawing.Point(0, 161);
+            this.labelPreview.Location = new System.Drawing.Point(0, 242);
+            this.labelPreview.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPreview.Name = "labelPreview";
-            this.labelPreview.Size = new System.Drawing.Size(160, 68);
+            this.labelPreview.Size = new System.Drawing.Size(240, 102);
             this.labelPreview.TabIndex = 3;
             this.labelPreview.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -206,17 +207,19 @@
             // 
             this.panel5.Controls.Add(this.checkBoxHighlight);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 231);
+            this.panel5.Location = new System.Drawing.Point(0, 346);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(160, 21);
+            this.panel5.Size = new System.Drawing.Size(240, 32);
             this.panel5.TabIndex = 4;
             // 
             // checkBoxHighlight
             // 
             this.checkBoxHighlight.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxHighlight.Location = new System.Drawing.Point(48, 0);
+            this.checkBoxHighlight.Location = new System.Drawing.Point(72, 0);
+            this.checkBoxHighlight.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxHighlight.Name = "checkBoxHighlight";
-            this.checkBoxHighlight.Size = new System.Drawing.Size(88, 24);
+            this.checkBoxHighlight.Size = new System.Drawing.Size(132, 36);
             this.checkBoxHighlight.TabIndex = 0;
             this.checkBoxHighlight.Text = "Album Cover";
             this.checkBoxHighlight.CheckedChanged += new System.EventHandler(this.checkBoxHighlight_CheckedChanged);
@@ -226,9 +229,10 @@
             this.buttonFilter.ContextMenu = this.contextMenuFilter;
             this.buttonFilter.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonFilter.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonFilter.Location = new System.Drawing.Point(317, 10);
+            this.buttonFilter.Location = new System.Drawing.Point(476, 15);
+            this.buttonFilter.Margin = new System.Windows.Forms.Padding(4);
             this.buttonFilter.Name = "buttonFilter";
-            this.buttonFilter.Size = new System.Drawing.Size(96, 21);
+            this.buttonFilter.Size = new System.Drawing.Size(144, 32);
             this.buttonFilter.TabIndex = 15;
             this.buttonFilter.Text = "Filter Pictures";
             this.buttonFilter.Click += new System.EventHandler(this.buttonFilter_Click);
@@ -320,9 +324,10 @@
             this.panelBottom.Controls.Add(this.buttonQuit);
             this.panelBottom.Controls.Add(this.comboBoxDuplicates);
             this.panelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelBottom.Location = new System.Drawing.Point(0, 515);
+            this.panelBottom.Location = new System.Drawing.Point(0, 772);
+            this.panelBottom.Margin = new System.Windows.Forms.Padding(4);
             this.panelBottom.Name = "panelBottom";
-            this.panelBottom.Size = new System.Drawing.Size(634, 56);
+            this.panelBottom.Size = new System.Drawing.Size(951, 84);
             this.panelBottom.TabIndex = 16;
             // 
             // progressBar
@@ -330,28 +335,30 @@
             this.progressBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.progressBar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.progressBar.Location = new System.Drawing.Point(440, 36);
+            this.progressBar.Location = new System.Drawing.Point(660, 54);
+            this.progressBar.Margin = new System.Windows.Forms.Padding(4);
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(179, 18);
+            this.progressBar.Size = new System.Drawing.Size(268, 27);
             this.progressBar.TabIndex = 13;
             // 
             // statusBar
             // 
             this.statusBar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.statusBar.Location = new System.Drawing.Point(0, 34);
+            this.statusBar.Location = new System.Drawing.Point(0, 51);
+            this.statusBar.Margin = new System.Windows.Forms.Padding(4);
             this.statusBar.Name = "statusBar";
             this.statusBar.Panels.AddRange(new System.Windows.Forms.StatusBarPanel[] {
             this.statusBarPanelText,
             this.statusBarPanelProgress});
             this.statusBar.ShowPanels = true;
-            this.statusBar.Size = new System.Drawing.Size(634, 22);
+            this.statusBar.Size = new System.Drawing.Size(951, 33);
             this.statusBar.TabIndex = 10;
             // 
             // statusBarPanelText
             // 
             this.statusBarPanelText.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring;
             this.statusBarPanelText.Name = "statusBarPanelText";
-            this.statusBarPanelText.Width = 467;
+            this.statusBarPanelText.Width = 776;
             // 
             // statusBarPanelProgress
             // 
@@ -369,9 +376,10 @@
             this.buttonUpload.Enabled = false;
             this.buttonUpload.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.buttonUpload.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonUpload.Location = new System.Drawing.Point(554, 8);
+            this.buttonUpload.Location = new System.Drawing.Point(831, 3);
+            this.buttonUpload.Margin = new System.Windows.Forms.Padding(4);
             this.buttonUpload.Name = "buttonUpload";
-            this.buttonUpload.Size = new System.Drawing.Size(75, 23);
+            this.buttonUpload.Size = new System.Drawing.Size(112, 44);
             this.buttonUpload.TabIndex = 0;
             this.buttonUpload.Text = "Upload";
             this.buttonUpload.Click += new System.EventHandler(this.buttonUpload_Click);
@@ -383,9 +391,10 @@
             this.buttonQuit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonQuit.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.buttonQuit.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonQuit.Location = new System.Drawing.Point(474, 8);
+            this.buttonQuit.Location = new System.Drawing.Point(711, 3);
+            this.buttonQuit.Margin = new System.Windows.Forms.Padding(4);
             this.buttonQuit.Name = "buttonQuit";
-            this.buttonQuit.Size = new System.Drawing.Size(75, 23);
+            this.buttonQuit.Size = new System.Drawing.Size(112, 44);
             this.buttonQuit.TabIndex = 0;
             this.buttonQuit.Text = "Quit";
             this.buttonQuit.Click += new System.EventHandler(this.buttonQuit_Click);
@@ -393,14 +402,15 @@
             // comboBoxDuplicates
             // 
             this.comboBoxDuplicates.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxDuplicates.ItemHeight = 13;
+            this.comboBoxDuplicates.ItemHeight = 21;
             this.comboBoxDuplicates.Items.AddRange(new object[] {
             "Skip duplicates",
             "Allow duplicates",
             "Replace duplicates"});
-            this.comboBoxDuplicates.Location = new System.Drawing.Point(160, 10);
+            this.comboBoxDuplicates.Location = new System.Drawing.Point(240, 15);
+            this.comboBoxDuplicates.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxDuplicates.Name = "comboBoxDuplicates";
-            this.comboBoxDuplicates.Size = new System.Drawing.Size(151, 21);
+            this.comboBoxDuplicates.Size = new System.Drawing.Size(224, 29);
             this.comboBoxDuplicates.TabIndex = 2;
             this.comboBoxDuplicates.SelectionChangeCommitted += new System.EventHandler(this.comboBoxCategory_SelectionChangeCommitted);
             // 
@@ -423,9 +433,10 @@
             // 
             this.checkBoxCheckAll.AutoSize = true;
             this.checkBoxCheckAll.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxCheckAll.Location = new System.Drawing.Point(165, 5);
+            this.checkBoxCheckAll.Location = new System.Drawing.Point(248, 8);
+            this.checkBoxCheckAll.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxCheckAll.Name = "checkBoxCheckAll";
-            this.checkBoxCheckAll.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxCheckAll.Size = new System.Drawing.Size(22, 21);
             this.checkBoxCheckAll.TabIndex = 20;
             this.checkBoxCheckAll.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.checkBoxCheckAll.CheckedChanged += new System.EventHandler(this.checkBoxCheckAll_CheckedChanged);
@@ -442,10 +453,11 @@
             this.listViewPhotos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listViewPhotos.FullRowSelect = true;
             this.listViewPhotos.HideSelection = false;
-            this.listViewPhotos.Location = new System.Drawing.Point(160, 0);
+            this.listViewPhotos.Location = new System.Drawing.Point(240, 0);
+            this.listViewPhotos.Margin = new System.Windows.Forms.Padding(4);
             this.listViewPhotos.Name = "listViewPhotos";
             this.listViewPhotos.ShowItemToolTips = true;
-            this.listViewPhotos.Size = new System.Drawing.Size(474, 252);
+            this.listViewPhotos.Size = new System.Drawing.Size(711, 378);
             this.listViewPhotos.TabIndex = 0;
             this.listViewPhotos.UseCompatibleStateImageBehavior = false;
             this.listViewPhotos.View = System.Windows.Forms.View.Details;
@@ -462,10 +474,11 @@
             this.comboBoxStyle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxStyle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxStyle.ItemHeight = 13;
-            this.comboBoxStyle.Location = new System.Drawing.Point(92, 165);
+            this.comboBoxStyle.ItemHeight = 21;
+            this.comboBoxStyle.Location = new System.Drawing.Point(138, 248);
+            this.comboBoxStyle.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxStyle.Name = "comboBoxStyle";
-            this.comboBoxStyle.Size = new System.Drawing.Size(160, 21);
+            this.comboBoxStyle.Size = new System.Drawing.Size(238, 29);
             this.comboBoxStyle.TabIndex = 10;
             this.toolTip.SetToolTip(this.comboBoxStyle, "would you like to force a gallery style?");
             // 
@@ -474,9 +487,10 @@
             this.labelSorting.AutoSize = true;
             this.labelSorting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.labelSorting.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelSorting.Location = new System.Drawing.Point(267, 168);
+            this.labelSorting.Location = new System.Drawing.Point(400, 252);
+            this.labelSorting.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSorting.Name = "labelSorting";
-            this.labelSorting.Size = new System.Drawing.Size(45, 13);
+            this.labelSorting.Size = new System.Drawing.Size(68, 21);
             this.labelSorting.TabIndex = 4;
             this.labelSorting.Text = "Sorting:";
             this.labelSorting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -487,10 +501,11 @@
             this.comboBoxSorting.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxSorting.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxSorting.ItemHeight = 13;
-            this.comboBoxSorting.Location = new System.Drawing.Point(318, 165);
+            this.comboBoxSorting.ItemHeight = 21;
+            this.comboBoxSorting.Location = new System.Drawing.Point(477, 248);
+            this.comboBoxSorting.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxSorting.Name = "comboBoxSorting";
-            this.comboBoxSorting.Size = new System.Drawing.Size(193, 21);
+            this.comboBoxSorting.Size = new System.Drawing.Size(288, 29);
             this.comboBoxSorting.TabIndex = 7;
             this.toolTip.SetToolTip(this.comboBoxSorting, "how would you like your photos sorted?");
             // 
@@ -504,9 +519,10 @@
             this.labelPosition.AutoSize = true;
             this.labelPosition.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.labelPosition.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelPosition.Location = new System.Drawing.Point(17, 197);
+            this.labelPosition.Location = new System.Drawing.Point(26, 296);
+            this.labelPosition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPosition.Name = "labelPosition";
-            this.labelPosition.Size = new System.Drawing.Size(48, 13);
+            this.labelPosition.Size = new System.Drawing.Size(74, 21);
             this.labelPosition.TabIndex = 4;
             this.labelPosition.Text = "Position:";
             this.labelPosition.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -525,8 +541,6 @@
             this.menuItem8.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
             this.menuItemSendError,
             this.menuItem4,
-            this.menuItemFeedback,
-            this.menuItem6,
             this.menuItemHelpAbout});
             this.menuItem8.Text = "&Help";
             // 
@@ -541,20 +555,9 @@
             this.menuItem4.Index = 1;
             this.menuItem4.Text = "-";
             // 
-            // menuItemFeedback
-            // 
-            this.menuItemFeedback.Index = 2;
-            this.menuItemFeedback.Text = "Feedback and &Suggestions...";
-            this.menuItemFeedback.Click += new System.EventHandler(this.menuItemFeedback_Click);
-            // 
-            // menuItem6
-            // 
-            this.menuItem6.Index = 3;
-            this.menuItem6.Text = "-";
-            // 
             // menuItemHelpAbout
             // 
-            this.menuItemHelpAbout.Index = 4;
+            this.menuItemHelpAbout.Index = 2;
             this.menuItemHelpAbout.Text = "&About Send to SmugMug";
             this.menuItemHelpAbout.Click += new System.EventHandler(this.menuItemHelpAbout_Click);
             // 
@@ -563,9 +566,10 @@
             this.labelStyle.AutoSize = true;
             this.labelStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.labelStyle.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelStyle.Location = new System.Drawing.Point(17, 168);
+            this.labelStyle.Location = new System.Drawing.Point(26, 252);
+            this.labelStyle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelStyle.Name = "labelStyle";
-            this.labelStyle.Size = new System.Drawing.Size(35, 13);
+            this.labelStyle.Size = new System.Drawing.Size(52, 21);
             this.labelStyle.TabIndex = 4;
             this.labelStyle.Text = "Style:";
             this.labelStyle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -585,12 +589,13 @@
             // 
             this.comboBoxCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCategory.Enabled = false;
-            this.comboBoxCategory.ItemHeight = 13;
+            this.comboBoxCategory.ItemHeight = 21;
             this.comboBoxCategory.Items.AddRange(new object[] {
             ""});
-            this.comboBoxCategory.Location = new System.Drawing.Point(149, 80);
+            this.comboBoxCategory.Location = new System.Drawing.Point(224, 120);
+            this.comboBoxCategory.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxCategory.Name = "comboBoxCategory";
-            this.comboBoxCategory.Size = new System.Drawing.Size(151, 21);
+            this.comboBoxCategory.Size = new System.Drawing.Size(224, 29);
             this.comboBoxCategory.TabIndex = 2;
             this.toolTip.SetToolTip(this.comboBoxCategory, resources.GetString("comboBoxCategory.ToolTip"));
             this.comboBoxCategory.SelectionChangeCommitted += new System.EventHandler(this.comboBoxCategory_SelectionChangeCommitted);
@@ -598,9 +603,10 @@
             // textBoxTitle
             // 
             this.textBoxTitle.Enabled = false;
-            this.textBoxTitle.Location = new System.Drawing.Point(149, 48);
+            this.textBoxTitle.Location = new System.Drawing.Point(224, 72);
+            this.textBoxTitle.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTitle.Name = "textBoxTitle";
-            this.textBoxTitle.Size = new System.Drawing.Size(257, 21);
+            this.textBoxTitle.Size = new System.Drawing.Size(384, 27);
             this.textBoxTitle.TabIndex = 1;
             this.toolTip.SetToolTip(this.textBoxTitle, "The title to your gallery should be something short and descriptive, \r\nthat tells" +
         " people visiting your gallery what they can expect to see.");
@@ -611,18 +617,20 @@
             // comboBoxSubCategory
             // 
             this.comboBoxSubCategory.Enabled = false;
-            this.comboBoxSubCategory.ItemHeight = 13;
-            this.comboBoxSubCategory.Location = new System.Drawing.Point(404, 80);
+            this.comboBoxSubCategory.ItemHeight = 21;
+            this.comboBoxSubCategory.Location = new System.Drawing.Point(606, 120);
+            this.comboBoxSubCategory.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxSubCategory.Name = "comboBoxSubCategory";
-            this.comboBoxSubCategory.Size = new System.Drawing.Size(151, 21);
+            this.comboBoxSubCategory.Size = new System.Drawing.Size(224, 29);
             this.comboBoxSubCategory.TabIndex = 3;
             this.toolTip.SetToolTip(this.comboBoxSubCategory, resources.GetString("comboBoxSubCategory.ToolTip"));
             // 
             // textBoxDescription
             // 
-            this.textBoxDescription.Location = new System.Drawing.Point(149, 139);
+            this.textBoxDescription.Location = new System.Drawing.Point(224, 208);
+            this.textBoxDescription.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxDescription.Name = "textBoxDescription";
-            this.textBoxDescription.Size = new System.Drawing.Size(257, 21);
+            this.textBoxDescription.Size = new System.Drawing.Size(384, 27);
             this.textBoxDescription.TabIndex = 4;
             this.toolTip.SetToolTip(this.textBoxDescription, "A description acts as a subtitle for your gallery. It often describes the date \r\n" +
         "and events surrounding the photos in the gallery. It helps people understand you" +
@@ -630,34 +638,22 @@
             // 
             // textBoxKeywords
             // 
-            this.textBoxKeywords.Location = new System.Drawing.Point(149, 168);
+            this.textBoxKeywords.Location = new System.Drawing.Point(224, 252);
+            this.textBoxKeywords.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxKeywords.Name = "textBoxKeywords";
-            this.textBoxKeywords.Size = new System.Drawing.Size(257, 21);
+            this.textBoxKeywords.Size = new System.Drawing.Size(384, 27);
             this.textBoxKeywords.TabIndex = 5;
             this.toolTip.SetToolTip(this.textBoxKeywords, resources.GetString("textBoxKeywords.ToolTip"));
-            // 
-            // buttonDonate
-            // 
-            this.buttonDonate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonDonate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDonate.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonDonate.Image = global::SmugMug.SendToSmugMug.Properties.Resources.donate;
-            this.buttonDonate.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonDonate.Location = new System.Drawing.Point(559, 202);
-            this.buttonDonate.Name = "buttonDonate";
-            this.buttonDonate.Size = new System.Drawing.Size(65, 34);
-            this.buttonDonate.TabIndex = 2;
-            this.toolTip.SetToolTip(this.buttonDonate, "Donate via PayPal");
-            this.buttonDonate.Click += new System.EventHandler(this.buttonDonate_Click);
             // 
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
             this.labelPassword.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.labelPassword.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelPassword.Location = new System.Drawing.Point(20, 16);
+            this.labelPassword.Location = new System.Drawing.Point(30, 24);
+            this.labelPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(57, 13);
+            this.labelPassword.Size = new System.Drawing.Size(87, 21);
             this.labelPassword.TabIndex = 4;
             this.labelPassword.Text = "Password:";
             this.labelPassword.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -668,10 +664,11 @@
             this.textBoxPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxPassword.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBoxPassword.Location = new System.Drawing.Point(91, 13);
+            this.textBoxPassword.Location = new System.Drawing.Point(136, 20);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '*';
-            this.textBoxPassword.Size = new System.Drawing.Size(192, 21);
+            this.textBoxPassword.Size = new System.Drawing.Size(286, 27);
             this.textBoxPassword.TabIndex = 6;
             this.toolTip.SetToolTip(this.textBoxPassword, "prompts visitors for a password");
             // 
@@ -680,9 +677,10 @@
             this.labelPasswordHint.AutoSize = true;
             this.labelPasswordHint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.labelPasswordHint.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelPasswordHint.Location = new System.Drawing.Point(289, 16);
+            this.labelPasswordHint.Location = new System.Drawing.Point(434, 24);
+            this.labelPasswordHint.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPasswordHint.Name = "labelPasswordHint";
-            this.labelPasswordHint.Size = new System.Drawing.Size(79, 13);
+            this.labelPasswordHint.Size = new System.Drawing.Size(122, 21);
             this.labelPasswordHint.TabIndex = 4;
             this.labelPasswordHint.Text = "Password Hint:";
             this.labelPasswordHint.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -693,9 +691,10 @@
             this.textBoxPasswordHint.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxPasswordHint.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBoxPasswordHint.Location = new System.Drawing.Point(374, 13);
+            this.textBoxPasswordHint.Location = new System.Drawing.Point(561, 20);
+            this.textBoxPasswordHint.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPasswordHint.Name = "textBoxPasswordHint";
-            this.textBoxPasswordHint.Size = new System.Drawing.Size(192, 21);
+            this.textBoxPasswordHint.Size = new System.Drawing.Size(286, 27);
             this.textBoxPasswordHint.TabIndex = 6;
             this.toolTip.SetToolTip(this.textBoxPasswordHint, "gives your visitors a hint");
             // 
@@ -704,7 +703,7 @@
             this.comboBoxLargestSize.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxLargestSize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxLargestSize.ItemHeight = 13;
+            this.comboBoxLargestSize.ItemHeight = 21;
             this.comboBoxLargestSize.Items.AddRange(new object[] {
             "Original",
             "X3Large",
@@ -712,9 +711,10 @@
             "XLarge",
             "Large",
             "Medium"});
-            this.comboBoxLargestSize.Location = new System.Drawing.Point(95, 210);
+            this.comboBoxLargestSize.Location = new System.Drawing.Point(142, 315);
+            this.comboBoxLargestSize.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxLargestSize.Name = "comboBoxLargestSize";
-            this.comboBoxLargestSize.Size = new System.Drawing.Size(236, 21);
+            this.comboBoxLargestSize.Size = new System.Drawing.Size(352, 29);
             this.comboBoxLargestSize.TabIndex = 14;
             this.toolTip.SetToolTip(this.comboBoxLargestSize, "would you like to force a gallery style?");
             // 
@@ -724,9 +724,10 @@
             this.radioButtonUnlisted.Checked = global::SmugMug.SendToSmugMug.Properties.Settings.Default.AlbumUnlisted;
             this.radioButtonUnlisted.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::SmugMug.SendToSmugMug.Properties.Settings.Default, "AlbumUnlisted", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.radioButtonUnlisted.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioButtonUnlisted.Location = new System.Drawing.Point(208, 5);
+            this.radioButtonUnlisted.Location = new System.Drawing.Point(312, 8);
+            this.radioButtonUnlisted.Margin = new System.Windows.Forms.Padding(4);
             this.radioButtonUnlisted.Name = "radioButtonUnlisted";
-            this.radioButtonUnlisted.Size = new System.Drawing.Size(63, 17);
+            this.radioButtonUnlisted.Size = new System.Drawing.Size(95, 25);
             this.radioButtonUnlisted.TabIndex = 17;
             this.radioButtonUnlisted.TabStop = true;
             this.radioButtonUnlisted.Text = "Unlisted";
@@ -737,12 +738,13 @@
             this.comboBoxWatermark.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxWatermark.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxWatermark.ItemHeight = 13;
+            this.comboBoxWatermark.ItemHeight = 21;
             this.comboBoxWatermark.Items.AddRange(new object[] {
             "SmugMug"});
-            this.comboBoxWatermark.Location = new System.Drawing.Point(111, 162);
+            this.comboBoxWatermark.Location = new System.Drawing.Point(166, 243);
+            this.comboBoxWatermark.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxWatermark.Name = "comboBoxWatermark";
-            this.comboBoxWatermark.Size = new System.Drawing.Size(220, 21);
+            this.comboBoxWatermark.Size = new System.Drawing.Size(328, 29);
             this.comboBoxWatermark.TabIndex = 18;
             this.toolTip.SetToolTip(this.comboBoxWatermark, "would you like to force a gallery style?");
             this.comboBoxWatermark.Enter += new System.EventHandler(this.comboBoxWatermark_Enter);
@@ -753,9 +755,10 @@
             this.radioButtonPublic.Checked = global::SmugMug.SendToSmugMug.Properties.Settings.Default.AlbumPublic;
             this.radioButtonPublic.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::SmugMug.SendToSmugMug.Properties.Settings.Default, "AlbumPublic", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.radioButtonPublic.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioButtonPublic.Location = new System.Drawing.Point(138, 5);
+            this.radioButtonPublic.Location = new System.Drawing.Point(207, 8);
+            this.radioButtonPublic.Margin = new System.Windows.Forms.Padding(4);
             this.radioButtonPublic.Name = "radioButtonPublic";
-            this.radioButtonPublic.Size = new System.Drawing.Size(52, 17);
+            this.radioButtonPublic.Size = new System.Drawing.Size(78, 25);
             this.radioButtonPublic.TabIndex = 17;
             this.radioButtonPublic.Text = "Public";
             this.toolTip.SetToolTip(this.radioButtonPublic, "Public galleries are visible on your homepage and the whole world can see how ama" +
@@ -769,9 +772,10 @@
             this.checkBoxAllowExternalLinks.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::SmugMug.SendToSmugMug.Properties.Settings.Default, "AlbumAllowExternalLinks", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.checkBoxAllowExternalLinks.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.checkBoxAllowExternalLinks.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxAllowExternalLinks.Location = new System.Drawing.Point(23, 91);
+            this.checkBoxAllowExternalLinks.Location = new System.Drawing.Point(34, 136);
+            this.checkBoxAllowExternalLinks.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxAllowExternalLinks.Name = "checkBoxAllowExternalLinks";
-            this.checkBoxAllowExternalLinks.Size = new System.Drawing.Size(329, 18);
+            this.checkBoxAllowExternalLinks.Size = new System.Drawing.Size(502, 26);
             this.checkBoxAllowExternalLinks.TabIndex = 3;
             this.checkBoxAllowExternalLinks.Text = "Allow External Links (allow external links (eBay, forums, etc)?)";
             this.toolTip.SetToolTip(this.checkBoxAllowExternalLinks, resources.GetString("checkBoxAllowExternalLinks.ToolTip"));
@@ -784,9 +788,10 @@
             this.checkBoxProtected.Enabled = false;
             this.checkBoxProtected.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.checkBoxProtected.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxProtected.Location = new System.Drawing.Point(23, 115);
+            this.checkBoxProtected.Location = new System.Drawing.Point(34, 172);
+            this.checkBoxProtected.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxProtected.Name = "checkBoxProtected";
-            this.checkBoxProtected.Size = new System.Drawing.Size(239, 18);
+            this.checkBoxProtected.Size = new System.Drawing.Size(355, 26);
             this.checkBoxProtected.TabIndex = 9;
             this.checkBoxProtected.Tag = "pro";
             this.checkBoxProtected.Text = "Protected (right-click protect your photos?)";
@@ -801,9 +806,10 @@
             this.checkBoxGeography.Enabled = false;
             this.checkBoxGeography.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.checkBoxGeography.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxGeography.Location = new System.Drawing.Point(20, 112);
+            this.checkBoxGeography.Location = new System.Drawing.Point(30, 168);
+            this.checkBoxGeography.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxGeography.Name = "checkBoxGeography";
-            this.checkBoxGeography.Size = new System.Drawing.Size(431, 18);
+            this.checkBoxGeography.Size = new System.Drawing.Size(647, 26);
             this.checkBoxGeography.TabIndex = 16;
             this.checkBoxGeography.Text = "Geography (show and use the mapping features (for photos that are geotagged)?)";
             this.toolTip.SetToolTip(this.checkBoxGeography, "Show and use the mapping feature?");
@@ -816,9 +822,10 @@
             this.checkBoxShowCameraInfo.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::SmugMug.SendToSmugMug.Properties.Settings.Default, "AlbumShowCameraInfo", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.checkBoxShowCameraInfo.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.checkBoxShowCameraInfo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxShowCameraInfo.Location = new System.Drawing.Point(20, 64);
+            this.checkBoxShowCameraInfo.Location = new System.Drawing.Point(30, 96);
+            this.checkBoxShowCameraInfo.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxShowCameraInfo.Name = "checkBoxShowCameraInfo";
-            this.checkBoxShowCameraInfo.Size = new System.Drawing.Size(323, 18);
+            this.checkBoxShowCameraInfo.Size = new System.Drawing.Size(487, 26);
             this.checkBoxShowCameraInfo.TabIndex = 4;
             this.checkBoxShowCameraInfo.Text = "Camera Info (should extra camera info be displayed (EXIF)?)";
             this.toolTip.SetToolTip(this.checkBoxShowCameraInfo, resources.GetString("checkBoxShowCameraInfo.ToolTip"));
@@ -831,9 +838,10 @@
             this.checkBoxShowFilenames.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::SmugMug.SendToSmugMug.Properties.Settings.Default, "AlbumShowFilenames", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.checkBoxShowFilenames.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.checkBoxShowFilenames.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxShowFilenames.Location = new System.Drawing.Point(20, 88);
+            this.checkBoxShowFilenames.Location = new System.Drawing.Point(30, 132);
+            this.checkBoxShowFilenames.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxShowFilenames.Name = "checkBoxShowFilenames";
-            this.checkBoxShowFilenames.Size = new System.Drawing.Size(411, 18);
+            this.checkBoxShowFilenames.Size = new System.Drawing.Size(624, 26);
             this.checkBoxShowFilenames.TabIndex = 1;
             this.checkBoxShowFilenames.Text = "Filenames (for photos without captions, show the filename instead of nothing?)";
             this.toolTip.SetToolTip(this.checkBoxShowFilenames, resources.GetString("checkBoxShowFilenames.ToolTip"));
@@ -845,9 +853,10 @@
             this.checkBoxSortDirection.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::SmugMug.SendToSmugMug.Properties.Settings.Default, "AlbumSortDirection", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.checkBoxSortDirection.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.checkBoxSortDirection.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxSortDirection.Location = new System.Drawing.Point(318, 195);
+            this.checkBoxSortDirection.Location = new System.Drawing.Point(477, 292);
+            this.checkBoxSortDirection.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxSortDirection.Name = "checkBoxSortDirection";
-            this.checkBoxSortDirection.Size = new System.Drawing.Size(212, 18);
+            this.checkBoxSortDirection.Size = new System.Drawing.Size(314, 26);
             this.checkBoxSortDirection.TabIndex = 8;
             this.checkBoxSortDirection.Text = "Descending (Z-A, 99-1, Newer-Older)";
             this.toolTip.SetToolTip(this.checkBoxSortDirection, resources.GetString("checkBoxSortDirection.ToolTip"));
@@ -856,7 +865,8 @@
             // 
             this.numericUpDownPosition.AutoSize = true;
             this.numericUpDownPosition.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::SmugMug.SendToSmugMug.Properties.Settings.Default, "AlbumPosition", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.numericUpDownPosition.Location = new System.Drawing.Point(92, 195);
+            this.numericUpDownPosition.Location = new System.Drawing.Point(138, 292);
+            this.numericUpDownPosition.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownPosition.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -868,7 +878,7 @@
             0,
             0});
             this.numericUpDownPosition.Name = "numericUpDownPosition";
-            this.numericUpDownPosition.Size = new System.Drawing.Size(48, 21);
+            this.numericUpDownPosition.Size = new System.Drawing.Size(78, 27);
             this.numericUpDownPosition.TabIndex = 9;
             this.numericUpDownPosition.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip.SetToolTip(this.numericUpDownPosition, "what position would you like the album in the category/subcategory view");
@@ -882,9 +892,10 @@
             this.checkBoxAllowComments.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::SmugMug.SendToSmugMug.Properties.Settings.Default, "AlbumAllowComments", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.checkBoxAllowComments.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.checkBoxAllowComments.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxAllowComments.Location = new System.Drawing.Point(20, 88);
+            this.checkBoxAllowComments.Location = new System.Drawing.Point(30, 132);
+            this.checkBoxAllowComments.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxAllowComments.Name = "checkBoxAllowComments";
-            this.checkBoxAllowComments.Size = new System.Drawing.Size(301, 18);
+            this.checkBoxAllowComments.Size = new System.Drawing.Size(460, 26);
             this.checkBoxAllowComments.TabIndex = 2;
             this.checkBoxAllowComments.Text = "Allow Comments (can visitors read and post comments?)";
             this.toolTip.SetToolTip(this.checkBoxAllowComments, resources.GetString("checkBoxAllowComments.ToolTip"));
@@ -897,9 +908,10 @@
             this.checkBoxAllowEasySharing.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::SmugMug.SendToSmugMug.Properties.Settings.Default, "AlbumAllowEasySharing", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.checkBoxAllowEasySharing.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.checkBoxAllowEasySharing.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxAllowEasySharing.Location = new System.Drawing.Point(20, 112);
+            this.checkBoxAllowEasySharing.Location = new System.Drawing.Point(30, 168);
+            this.checkBoxAllowEasySharing.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxAllowEasySharing.Name = "checkBoxAllowEasySharing";
-            this.checkBoxAllowEasySharing.Size = new System.Drawing.Size(434, 18);
+            this.checkBoxAllowEasySharing.Size = new System.Drawing.Size(655, 26);
             this.checkBoxAllowEasySharing.TabIndex = 5;
             this.checkBoxAllowEasySharing.Text = "Allow Easy Sharing (do you want the share photo button to appear on your album?)";
             this.toolTip.SetToolTip(this.checkBoxAllowEasySharing, resources.GetString("checkBoxAllowEasySharing.ToolTip"));
@@ -912,9 +924,10 @@
             this.checkBoxAllowPrintOrdering.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::SmugMug.SendToSmugMug.Properties.Settings.Default, "AlbumAllowPrintOrdering", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.checkBoxAllowPrintOrdering.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.checkBoxAllowPrintOrdering.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxAllowPrintOrdering.Location = new System.Drawing.Point(20, 136);
+            this.checkBoxAllowPrintOrdering.Location = new System.Drawing.Point(30, 204);
+            this.checkBoxAllowPrintOrdering.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxAllowPrintOrdering.Name = "checkBoxAllowPrintOrdering";
-            this.checkBoxAllowPrintOrdering.Size = new System.Drawing.Size(325, 18);
+            this.checkBoxAllowPrintOrdering.Size = new System.Drawing.Size(489, 26);
             this.checkBoxAllowPrintOrdering.TabIndex = 5;
             this.checkBoxAllowPrintOrdering.Text = "Allow Print Ordering (can people buy prints of these photos?)";
             this.toolTip.SetToolTip(this.checkBoxAllowPrintOrdering, resources.GetString("checkBoxAllowPrintOrdering.ToolTip"));
@@ -927,9 +940,10 @@
             this.checkBoxFriendEdit.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::SmugMug.SendToSmugMug.Properties.Settings.Default, "AlbumFriendEdit", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.checkBoxFriendEdit.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.checkBoxFriendEdit.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxFriendEdit.Location = new System.Drawing.Point(20, 40);
+            this.checkBoxFriendEdit.Location = new System.Drawing.Point(30, 60);
+            this.checkBoxFriendEdit.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxFriendEdit.Name = "checkBoxFriendEdit";
-            this.checkBoxFriendEdit.Size = new System.Drawing.Size(321, 18);
+            this.checkBoxFriendEdit.Size = new System.Drawing.Size(486, 26);
             this.checkBoxFriendEdit.TabIndex = 2;
             this.checkBoxFriendEdit.Text = "Allow Friend Edit (can your friends edit captions & keywords?)";
             this.toolTip.SetToolTip(this.checkBoxFriendEdit, resources.GetString("checkBoxFriendEdit.ToolTip"));
@@ -942,9 +956,10 @@
             this.checkBoxFamilyEdit.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::SmugMug.SendToSmugMug.Properties.Settings.Default, "AlbumFamilyEdit", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.checkBoxFamilyEdit.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.checkBoxFamilyEdit.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxFamilyEdit.Location = new System.Drawing.Point(20, 64);
+            this.checkBoxFamilyEdit.Location = new System.Drawing.Point(30, 96);
+            this.checkBoxFamilyEdit.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxFamilyEdit.Name = "checkBoxFamilyEdit";
-            this.checkBoxFamilyEdit.Size = new System.Drawing.Size(334, 18);
+            this.checkBoxFamilyEdit.Size = new System.Drawing.Size(509, 26);
             this.checkBoxFamilyEdit.TabIndex = 2;
             this.checkBoxFamilyEdit.Text = "Allow Family Edit (can your family edit captions and keywords?)";
             this.toolTip.SetToolTip(this.checkBoxFamilyEdit, resources.GetString("checkBoxFamilyEdit.ToolTip"));
@@ -1018,9 +1033,10 @@
             this.panelMiddle.Controls.Add(this.listViewPhotos);
             this.panelMiddle.Controls.Add(this.panelPreview);
             this.panelMiddle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMiddle.Location = new System.Drawing.Point(0, 263);
+            this.panelMiddle.Location = new System.Drawing.Point(0, 394);
+            this.panelMiddle.Margin = new System.Windows.Forms.Padding(4);
             this.panelMiddle.Name = "panelMiddle";
-            this.panelMiddle.Size = new System.Drawing.Size(634, 252);
+            this.panelMiddle.Size = new System.Drawing.Size(951, 378);
             this.panelMiddle.TabIndex = 15;
             // 
             // linkLabelEditGallery
@@ -1028,9 +1044,10 @@
             this.linkLabelEditGallery.AutoSize = true;
             this.linkLabelEditGallery.Enabled = false;
             this.linkLabelEditGallery.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.linkLabelEditGallery.Location = new System.Drawing.Point(412, 18);
+            this.linkLabelEditGallery.Location = new System.Drawing.Point(618, 27);
+            this.linkLabelEditGallery.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabelEditGallery.Name = "linkLabelEditGallery";
-            this.linkLabelEditGallery.Size = new System.Drawing.Size(69, 13);
+            this.linkLabelEditGallery.Size = new System.Drawing.Size(106, 21);
             this.linkLabelEditGallery.TabIndex = 19;
             this.linkLabelEditGallery.TabStop = true;
             this.linkLabelEditGallery.Text = "Edit Album...";
@@ -1040,9 +1057,10 @@
             // 
             this.linkLabelManageShareGroups.AutoSize = true;
             this.linkLabelManageShareGroups.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.linkLabelManageShareGroups.Location = new System.Drawing.Point(308, 115);
+            this.linkLabelManageShareGroups.Location = new System.Drawing.Point(462, 172);
+            this.linkLabelManageShareGroups.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabelManageShareGroups.Name = "linkLabelManageShareGroups";
-            this.linkLabelManageShareGroups.Size = new System.Drawing.Size(122, 13);
+            this.linkLabelManageShareGroups.Size = new System.Drawing.Size(182, 21);
             this.linkLabelManageShareGroups.TabIndex = 19;
             this.linkLabelManageShareGroups.TabStop = true;
             this.linkLabelManageShareGroups.Text = "Manage ShareGroups...";
@@ -1066,21 +1084,22 @@
             this.tabPageEssentials.Controls.Add(this.textBoxDescription);
             this.tabPageEssentials.Controls.Add(this.labelSubCategory);
             this.tabPageEssentials.Controls.Add(this.textBoxKeywords);
-            this.tabPageEssentials.Controls.Add(this.buttonDonate);
             this.tabPageEssentials.Controls.Add(this.comboBoxShareGroup);
             this.tabPageEssentials.Controls.Add(this.label25);
             this.tabPageEssentials.Location = new System.Drawing.Point(4, 22);
+            this.tabPageEssentials.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageEssentials.Name = "tabPageEssentials";
-            this.tabPageEssentials.Size = new System.Drawing.Size(626, 237);
+            this.tabPageEssentials.Size = new System.Drawing.Size(943, 368);
             this.tabPageEssentials.TabIndex = 0;
             this.tabPageEssentials.Text = "Essentials";
             // 
             // checkBoxCreateForEach
             // 
             this.checkBoxCreateForEach.AutoSize = true;
-            this.checkBoxCreateForEach.Location = new System.Drawing.Point(412, 50);
+            this.checkBoxCreateForEach.Location = new System.Drawing.Point(618, 75);
+            this.checkBoxCreateForEach.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxCreateForEach.Name = "checkBoxCreateForEach";
-            this.checkBoxCreateForEach.Size = new System.Drawing.Size(165, 17);
+            this.checkBoxCreateForEach.Size = new System.Drawing.Size(249, 25);
             this.checkBoxCreateForEach.TabIndex = 20;
             this.checkBoxCreateForEach.Text = "Create Album for each folder";
             this.checkBoxCreateForEach.UseVisualStyleBackColor = true;
@@ -1093,9 +1112,10 @@
             this.panel4.Controls.Add(this.radioButtonUnlisted);
             this.panel4.Controls.Add(this.radioButtonPublic);
             this.panel4.Controls.Add(this.label33);
-            this.panel4.Location = new System.Drawing.Point(11, 198);
+            this.panel4.Location = new System.Drawing.Point(16, 297);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(458, 27);
+            this.panel4.Size = new System.Drawing.Size(687, 40);
             this.panel4.TabIndex = 18;
             // 
             // linkLabel1
@@ -1103,9 +1123,10 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.linkLabel1.LinkArea = new System.Windows.Forms.LinkArea(0, 22);
-            this.linkLabel1.Location = new System.Drawing.Point(277, 7);
+            this.linkLabel1.Location = new System.Drawing.Point(416, 10);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(113, 13);
+            this.linkLabel1.Size = new System.Drawing.Size(168, 21);
             this.linkLabel1.TabIndex = 19;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Privacy Information...";
@@ -1116,9 +1137,10 @@
             this.label33.AutoSize = true;
             this.label33.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label33.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label33.Location = new System.Drawing.Point(29, 7);
+            this.label33.Location = new System.Drawing.Point(44, 10);
+            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(46, 13);
+            this.label33.Size = new System.Drawing.Size(68, 21);
             this.label33.TabIndex = 4;
             this.label33.Text = "Privacy:";
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1128,9 +1150,10 @@
             this.labelCategory.AutoSize = true;
             this.labelCategory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.labelCategory.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelCategory.Location = new System.Drawing.Point(40, 83);
+            this.labelCategory.Location = new System.Drawing.Point(60, 124);
+            this.labelCategory.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCategory.Name = "labelCategory";
-            this.labelCategory.Size = new System.Drawing.Size(56, 13);
+            this.labelCategory.Size = new System.Drawing.Size(82, 21);
             this.labelCategory.TabIndex = 4;
             this.labelCategory.Text = "Category:";
             this.labelCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1140,10 +1163,11 @@
             this.comboBoxAdd.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboBoxAdd.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBoxAdd.Enabled = false;
-            this.comboBoxAdd.ItemHeight = 13;
-            this.comboBoxAdd.Location = new System.Drawing.Point(149, 16);
+            this.comboBoxAdd.ItemHeight = 21;
+            this.comboBoxAdd.Location = new System.Drawing.Point(224, 24);
+            this.comboBoxAdd.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxAdd.Name = "comboBoxAdd";
-            this.comboBoxAdd.Size = new System.Drawing.Size(257, 21);
+            this.comboBoxAdd.Size = new System.Drawing.Size(384, 29);
             this.comboBoxAdd.TabIndex = 0;
             this.comboBoxAdd.SelectionChangeCommitted += new System.EventHandler(this.comboBoxAdd_SelectionChangeCommitted);
             this.comboBoxAdd.Validated += new System.EventHandler(this.comboBoxAdd_Validated);
@@ -1155,9 +1179,10 @@
             this.radioButtonCreateNewAlbum.Enabled = false;
             this.radioButtonCreateNewAlbum.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.radioButtonCreateNewAlbum.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioButtonCreateNewAlbum.Location = new System.Drawing.Point(8, 48);
+            this.radioButtonCreateNewAlbum.Location = new System.Drawing.Point(12, 72);
+            this.radioButtonCreateNewAlbum.Margin = new System.Windows.Forms.Padding(4);
             this.radioButtonCreateNewAlbum.Name = "radioButtonCreateNewAlbum";
-            this.radioButtonCreateNewAlbum.Size = new System.Drawing.Size(123, 18);
+            this.radioButtonCreateNewAlbum.Size = new System.Drawing.Size(177, 26);
             this.radioButtonCreateNewAlbum.TabIndex = 0;
             this.radioButtonCreateNewAlbum.TabStop = true;
             this.radioButtonCreateNewAlbum.Text = "Create new Album:";
@@ -1168,9 +1193,10 @@
             this.labelDescription.AutoSize = true;
             this.labelDescription.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.labelDescription.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelDescription.Location = new System.Drawing.Point(40, 142);
+            this.labelDescription.Location = new System.Drawing.Point(60, 213);
+            this.labelDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelDescription.Name = "labelDescription";
-            this.labelDescription.Size = new System.Drawing.Size(64, 13);
+            this.labelDescription.Size = new System.Drawing.Size(100, 21);
             this.labelDescription.TabIndex = 4;
             this.labelDescription.Text = "Description:";
             this.labelDescription.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1180,9 +1206,10 @@
             this.labelKeywords.AutoSize = true;
             this.labelKeywords.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.labelKeywords.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelKeywords.Location = new System.Drawing.Point(40, 171);
+            this.labelKeywords.Location = new System.Drawing.Point(60, 256);
+            this.labelKeywords.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelKeywords.Name = "labelKeywords";
-            this.labelKeywords.Size = new System.Drawing.Size(58, 13);
+            this.labelKeywords.Size = new System.Drawing.Size(88, 21);
             this.labelKeywords.TabIndex = 4;
             this.labelKeywords.Text = "Keywords:";
             this.labelKeywords.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1192,9 +1219,10 @@
             this.labelSubCategory.AutoSize = true;
             this.labelSubCategory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.labelSubCategory.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelSubCategory.Location = new System.Drawing.Point(306, 83);
+            this.labelSubCategory.Location = new System.Drawing.Point(459, 124);
+            this.labelSubCategory.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSubCategory.Name = "labelSubCategory";
-            this.labelSubCategory.Size = new System.Drawing.Size(77, 13);
+            this.labelSubCategory.Size = new System.Drawing.Size(114, 21);
             this.labelSubCategory.TabIndex = 4;
             this.labelSubCategory.Text = "Sub Category:";
             this.labelSubCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1202,10 +1230,11 @@
             // comboBoxShareGroup
             // 
             this.comboBoxShareGroup.Enabled = false;
-            this.comboBoxShareGroup.ItemHeight = 13;
-            this.comboBoxShareGroup.Location = new System.Drawing.Point(149, 112);
+            this.comboBoxShareGroup.ItemHeight = 21;
+            this.comboBoxShareGroup.Location = new System.Drawing.Point(224, 168);
+            this.comboBoxShareGroup.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxShareGroup.Name = "comboBoxShareGroup";
-            this.comboBoxShareGroup.Size = new System.Drawing.Size(153, 21);
+            this.comboBoxShareGroup.Size = new System.Drawing.Size(228, 29);
             this.comboBoxShareGroup.TabIndex = 2;
             this.comboBoxShareGroup.Enter += new System.EventHandler(this.comboBoxShareGroup_Enter);
             // 
@@ -1214,9 +1243,10 @@
             this.label25.AutoSize = true;
             this.label25.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label25.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label25.Location = new System.Drawing.Point(40, 115);
+            this.label25.Location = new System.Drawing.Point(60, 172);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(68, 13);
+            this.label25.Size = new System.Drawing.Size(102, 21);
             this.label25.TabIndex = 4;
             this.label25.Text = "ShareGroup:";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1230,9 +1260,10 @@
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.ItemSize = new System.Drawing.Size(59, 18);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(634, 263);
+            this.tabControl1.Size = new System.Drawing.Size(951, 394);
             this.tabControl1.TabIndex = 3;
             // 
             // tabPageSecurityAndPrivacy
@@ -1252,8 +1283,9 @@
             this.tabPageSecurityAndPrivacy.Controls.Add(this.checkBoxSmugSearchable);
             this.tabPageSecurityAndPrivacy.Controls.Add(this.checkBoxHideOwner);
             this.tabPageSecurityAndPrivacy.Location = new System.Drawing.Point(4, 22);
+            this.tabPageSecurityAndPrivacy.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageSecurityAndPrivacy.Name = "tabPageSecurityAndPrivacy";
-            this.tabPageSecurityAndPrivacy.Size = new System.Drawing.Size(626, 237);
+            this.tabPageSecurityAndPrivacy.Size = new System.Drawing.Size(943, 368);
             this.tabPageSecurityAndPrivacy.TabIndex = 3;
             this.tabPageSecurityAndPrivacy.Text = "Security & Privacy";
             // 
@@ -1262,9 +1294,10 @@
             this.label1.AutoSize = true;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(41, 165);
+            this.label1.Location = new System.Drawing.Point(62, 248);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 13);
+            this.label1.Size = new System.Drawing.Size(98, 21);
             this.label1.TabIndex = 17;
             this.label1.Text = "Watermark:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1274,9 +1307,10 @@
             this.labelLargestSize.AutoSize = true;
             this.labelLargestSize.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.labelLargestSize.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelLargestSize.Location = new System.Drawing.Point(20, 213);
+            this.labelLargestSize.Location = new System.Drawing.Point(30, 320);
+            this.labelLargestSize.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelLargestSize.Name = "labelLargestSize";
-            this.labelLargestSize.Size = new System.Drawing.Size(69, 13);
+            this.labelLargestSize.Size = new System.Drawing.Size(106, 21);
             this.labelLargestSize.TabIndex = 13;
             this.labelLargestSize.Text = "Largest Size:";
             this.labelLargestSize.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1289,9 +1323,10 @@
             this.checkBoxApplyWatermark.Enabled = false;
             this.checkBoxApplyWatermark.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.checkBoxApplyWatermark.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxApplyWatermark.Location = new System.Drawing.Point(23, 139);
+            this.checkBoxApplyWatermark.Location = new System.Drawing.Point(34, 208);
+            this.checkBoxApplyWatermark.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxApplyWatermark.Name = "checkBoxApplyWatermark";
-            this.checkBoxApplyWatermark.Size = new System.Drawing.Size(326, 18);
+            this.checkBoxApplyWatermark.Size = new System.Drawing.Size(490, 26);
             this.checkBoxApplyWatermark.TabIndex = 12;
             this.checkBoxApplyWatermark.Tag = "pro";
             this.checkBoxApplyWatermark.Text = "Apply Watermark (watermark your photos as you add them?)";
@@ -1304,9 +1339,10 @@
             this.checkBoxWorldSearchable.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::SmugMug.SendToSmugMug.Properties.Settings.Default, "AlbumWorldSearchable", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.checkBoxWorldSearchable.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.checkBoxWorldSearchable.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxWorldSearchable.Location = new System.Drawing.Point(23, 43);
+            this.checkBoxWorldSearchable.Location = new System.Drawing.Point(34, 64);
+            this.checkBoxWorldSearchable.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxWorldSearchable.Name = "checkBoxWorldSearchable";
-            this.checkBoxWorldSearchable.Size = new System.Drawing.Size(250, 18);
+            this.checkBoxWorldSearchable.Size = new System.Drawing.Size(375, 26);
             this.checkBoxWorldSearchable.TabIndex = 0;
             this.checkBoxWorldSearchable.Text = "Hello World (can Google find your SmugMug?)";
             // 
@@ -1318,9 +1354,10 @@
             this.checkBoxSmugSearchable.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::SmugMug.SendToSmugMug.Properties.Settings.Default, "AlbumSmugSearchable", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.checkBoxSmugSearchable.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.checkBoxSmugSearchable.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxSmugSearchable.Location = new System.Drawing.Point(23, 67);
+            this.checkBoxSmugSearchable.Location = new System.Drawing.Point(34, 100);
+            this.checkBoxSmugSearchable.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxSmugSearchable.Name = "checkBoxSmugSearchable";
-            this.checkBoxSmugSearchable.Size = new System.Drawing.Size(345, 18);
+            this.checkBoxSmugSearchable.Size = new System.Drawing.Size(522, 26);
             this.checkBoxSmugSearchable.TabIndex = 0;
             this.checkBoxSmugSearchable.Text = "Hello Smuggers (do you want your photos in SmugMug\'s Search?)";
             // 
@@ -1332,9 +1369,10 @@
             this.checkBoxHideOwner.Enabled = false;
             this.checkBoxHideOwner.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.checkBoxHideOwner.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxHideOwner.Location = new System.Drawing.Point(23, 186);
+            this.checkBoxHideOwner.Location = new System.Drawing.Point(34, 279);
+            this.checkBoxHideOwner.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxHideOwner.Name = "checkBoxHideOwner";
-            this.checkBoxHideOwner.Size = new System.Drawing.Size(324, 18);
+            this.checkBoxHideOwner.Size = new System.Drawing.Size(485, 26);
             this.checkBoxHideOwner.TabIndex = 12;
             this.checkBoxHideOwner.Text = "Hide Owner (hide your name, navigation, and look and feel?)";
             // 
@@ -1355,8 +1393,9 @@
             this.tabPageLookAndFeel.Controls.Add(this.checkBoxDisplayCustomHeader);
             this.tabPageLookAndFeel.Controls.Add(this.checkBoxSquareThumbs);
             this.tabPageLookAndFeel.Location = new System.Drawing.Point(4, 22);
+            this.tabPageLookAndFeel.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageLookAndFeel.Name = "tabPageLookAndFeel";
-            this.tabPageLookAndFeel.Size = new System.Drawing.Size(626, 237);
+            this.tabPageLookAndFeel.Size = new System.Drawing.Size(943, 368);
             this.tabPageLookAndFeel.TabIndex = 1;
             this.tabPageLookAndFeel.Text = "Look & Feel";
             // 
@@ -1368,9 +1407,10 @@
             this.checkBoxCleanStyle.Enabled = false;
             this.checkBoxCleanStyle.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.checkBoxCleanStyle.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxCleanStyle.Location = new System.Drawing.Point(20, 40);
+            this.checkBoxCleanStyle.Location = new System.Drawing.Point(30, 60);
+            this.checkBoxCleanStyle.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxCleanStyle.Name = "checkBoxCleanStyle";
-            this.checkBoxCleanStyle.Size = new System.Drawing.Size(299, 18);
+            this.checkBoxCleanStyle.Size = new System.Drawing.Size(451, 26);
             this.checkBoxCleanStyle.TabIndex = 11;
             this.checkBoxCleanStyle.Tag = "pro";
             this.checkBoxCleanStyle.Text = "Clean (hide description and update time on homepage?)";
@@ -1380,9 +1420,10 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Italic);
             this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label8.Location = new System.Drawing.Point(158, 226);
+            this.label8.Location = new System.Drawing.Point(237, 339);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(0, 13);
+            this.label8.Size = new System.Drawing.Size(0, 21);
             this.label8.TabIndex = 12;
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -1394,9 +1435,10 @@
             this.checkBoxDisplayCustomHeader.Enabled = false;
             this.checkBoxDisplayCustomHeader.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.checkBoxDisplayCustomHeader.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxDisplayCustomHeader.Location = new System.Drawing.Point(20, 16);
+            this.checkBoxDisplayCustomHeader.Location = new System.Drawing.Point(30, 24);
+            this.checkBoxDisplayCustomHeader.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxDisplayCustomHeader.Name = "checkBoxDisplayCustomHeader";
-            this.checkBoxDisplayCustomHeader.Size = new System.Drawing.Size(342, 18);
+            this.checkBoxDisplayCustomHeader.Size = new System.Drawing.Size(518, 26);
             this.checkBoxDisplayCustomHeader.TabIndex = 8;
             this.checkBoxDisplayCustomHeader.Tag = "power";
             this.checkBoxDisplayCustomHeader.Text = "Display Custom Header (display using your own custom header?)";
@@ -1409,9 +1451,10 @@
             this.checkBoxSquareThumbs.Enabled = false;
             this.checkBoxSquareThumbs.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.checkBoxSquareThumbs.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxSquareThumbs.Location = new System.Drawing.Point(20, 136);
+            this.checkBoxSquareThumbs.Location = new System.Drawing.Point(30, 204);
+            this.checkBoxSquareThumbs.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxSquareThumbs.Name = "checkBoxSquareThumbs";
-            this.checkBoxSquareThumbs.Size = new System.Drawing.Size(291, 18);
+            this.checkBoxSquareThumbs.Size = new System.Drawing.Size(441, 26);
             this.checkBoxSquareThumbs.TabIndex = 16;
             this.checkBoxSquareThumbs.Text = "Square Thumbnails (set gallery thumbnails to square?)";
             // 
@@ -1424,8 +1467,9 @@
             this.tabPageSocial.Controls.Add(this.checkBoxFamilyEdit);
             this.tabPageSocial.Controls.Add(this.checkBoxPhotoRank);
             this.tabPageSocial.Location = new System.Drawing.Point(4, 22);
+            this.tabPageSocial.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageSocial.Name = "tabPageSocial";
-            this.tabPageSocial.Size = new System.Drawing.Size(626, 237);
+            this.tabPageSocial.Size = new System.Drawing.Size(943, 368);
             this.tabPageSocial.TabIndex = 4;
             this.tabPageSocial.Text = "Social & Printing";
             // 
@@ -1437,9 +1481,10 @@
             this.checkBoxPhotoRank.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::SmugMug.SendToSmugMug.Properties.Settings.Default, "AlbumPhotoRank", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.checkBoxPhotoRank.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.checkBoxPhotoRank.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBoxPhotoRank.Location = new System.Drawing.Point(20, 16);
+            this.checkBoxPhotoRank.Location = new System.Drawing.Point(30, 24);
+            this.checkBoxPhotoRank.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxPhotoRank.Name = "checkBoxPhotoRank";
-            this.checkBoxPhotoRank.Size = new System.Drawing.Size(322, 18);
+            this.checkBoxPhotoRank.Size = new System.Drawing.Size(484, 26);
             this.checkBoxPhotoRank.TabIndex = 2;
             this.checkBoxPhotoRank.Text = "Photorank (allow visitors to vote your photos most popular?)";
             // 
@@ -1448,25 +1493,27 @@
             this.panelTop.Controls.Add(this.tabControl1);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
+            this.panelTop.Margin = new System.Windows.Forms.Padding(4);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(634, 263);
+            this.panelTop.Size = new System.Drawing.Size(951, 394);
             this.panelTop.TabIndex = 14;
             // 
             // MainWindow
             // 
             this.AcceptButton = this.buttonUpload;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.CancelButton = this.buttonQuit;
-            this.ClientSize = new System.Drawing.Size(634, 571);
+            this.ClientSize = new System.Drawing.Size(951, 856);
             this.Controls.Add(this.panelMiddle);
             this.Controls.Add(this.panelBottom);
             this.Controls.Add(this.panelTop);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Menu = this.mainMenu1;
-            this.MinimumSize = new System.Drawing.Size(616, 610);
+            this.MinimumSize = new System.Drawing.Size(913, 887);
             this.Name = "MainWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Send to SmugMug - by Omar Shahine";
@@ -1543,8 +1590,6 @@
         private System.Windows.Forms.MenuItem menuItem8;
         private System.Windows.Forms.MenuItem menuItemSendError;
         private System.Windows.Forms.MenuItem menuItem4;
-        private System.Windows.Forms.MenuItem menuItemFeedback;
-        private System.Windows.Forms.MenuItem menuItem6;
         private System.Windows.Forms.MenuItem menuItemHelpAbout;
         private System.Windows.Forms.Label labelStyle;
         private System.Windows.Forms.CheckBox checkBoxShowCameraInfo;
@@ -1577,7 +1622,6 @@
         private System.Windows.Forms.TextBox textBoxDescription;
         private System.Windows.Forms.Label labelSubCategory;
         private System.Windows.Forms.TextBox textBoxKeywords;
-        private System.Windows.Forms.Button buttonDonate;
         private System.Windows.Forms.ComboBox comboBoxShareGroup;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TabControl tabControl1;
